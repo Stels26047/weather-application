@@ -22,8 +22,8 @@
 
                 this.error = "";
 
-                axios.get(`http://api.weatherapi.com/v1/current.json?key=6170e44fefa74e0a88f183822250801&q=${this.city}&aqi=no`)
-                .then((res) => (this.info = res.data.current.temp_c));
+                axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=a4b0a5328237e10edbccf6745ccbbc3e&units=metric`)
+                .then((res) => (this.info = res.data.main.temp));
             }
         }
     }
