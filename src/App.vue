@@ -16,7 +16,8 @@
         methods:{
             getWeather(){
                 if(this.city.trim().length < 2){
-                    this.error = "Нужно название более одного символа :)"
+                    this.error = "Нужно название более одного символа :)";
+                    this.info = null;
                     return false
                 }
 
